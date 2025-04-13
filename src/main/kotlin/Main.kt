@@ -5,6 +5,16 @@ fun myFunc(myName: String): String {
     return "Hello my name is $myName"
 }
 
+open class ParentClass{
+    val x = 5
+}
+
+class childClass: ParentClass(){
+    fun myFunc(){
+        println(x)
+    }
+}
+
 class Car(brand: String, model: String, year: Int) {
     fun drive() {
         println("Wrooom!")
