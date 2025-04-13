@@ -40,4 +40,9 @@ fun main() {
         else -> "Invalid day"
     }
     println(result)
+
+    /*Unlike Java and other programming languages, there is no traditional for loop in Kotlin.*/
+    val nums = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    for(num in nums)
+        println(num)
 }
