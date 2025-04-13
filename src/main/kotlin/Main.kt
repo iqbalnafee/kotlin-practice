@@ -15,4 +15,29 @@ fun main() {
 
     println("Hello " + myName)
     println("Hello $myName")
+
+    /*The Byte data type can store whole numbers from -128 to 127.
+    This can be used instead of Int or other integer types to save memory when
+    you are certain that the value will be within -128 and 127*/
+
+    val myByte: Byte = 100
+
+    /*The Short data type can store whole numbers from -32768 to 32767: -2^15 to 2^15*/
+
+    var txt: String = "Hello World"
+    println(txt[0])
+
+    // kotlin when
+    val day = 7
+    val result = when (day) {
+        1 -> "Monday"
+        2 -> "Tuesday"
+        3 -> "Wednesday"
+        4 -> "Thursday"
+        5 -> "Friday"
+        6 -> "Saturday"
+        7 -> "Sunday"
+        else -> "Invalid day"
+    }
+    println(result)
 }
