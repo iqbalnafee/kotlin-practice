@@ -5,6 +5,12 @@ fun myFunc(myName: String): String {
     return "Hello my name is $myName"
 }
 
+class Car(brand: String, model: String, year: Int) {
+    fun drive() {
+        println("Wrooom!")
+    }
+}
+
 fun main() {
     var name = "John"
     var year = 2025
