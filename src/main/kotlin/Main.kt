@@ -21,7 +21,16 @@ class Car(brand: String, model: String, year: Int) {
     }
 }
 
+infix fun Int.times(str: String) = str.repeat(this)        // 1
+infix fun String.onto(other: String) = Pair(this, other)
+
+
 fun main() {
+    println(2 times "Bye ")
+    val pair = "Ferrari" to "Katrina"                          // 3
+    println(pair)
+    val myPair = "McLaren" onto "Lucas"
+    println(myPair)
     var name = "John"
     var year = 2025
 
@@ -34,8 +43,8 @@ fun main() {
     var myName: String
     myName = "Nafees"
 
-    println("Hello " + myName)
-    println("Hello $myName")
+    //println("Hello " + myName)
+    //println("Hello $myName")
 
     /*The Byte data type can store whole numbers from -128 to 127.
     This can be used instead of Int or other integer types to save memory when
@@ -46,7 +55,7 @@ fun main() {
     /*The Short data type can store whole numbers from -32768 to 32767: -2^15 to 2^15*/
 
     var txt: String = "Hello World"
-    println(txt[0])
+    //println(txt[0])
 
     // kotlin when
     val day = 7
@@ -60,13 +69,10 @@ fun main() {
         7 -> "Sunday"
         else -> "Invalid day"
     }
-    println(result)
+    //println(result)
 
     /*Unlike Java and other programming languages, there is no traditional for loop in Kotlin.*/
     val nums = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    for (num in nums)
-        println(num)
 
-    for (char in 'a'..'x')
-        println(char)
+
 }
