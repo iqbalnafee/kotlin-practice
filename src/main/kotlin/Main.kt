@@ -5,12 +5,12 @@ fun myFunc(myName: String): String {
     return "Hello my name is $myName"
 }
 
-open class ParentClass{
+open class ParentClass {
     val x = 5
 }
 
-class childClass: ParentClass(){
-    fun myFunc(){
+class childClass : ParentClass() {
+    fun myFunc() {
         println(x)
     }
 }
@@ -73,6 +73,10 @@ fun main() {
 
     /*Unlike Java and other programming languages, there is no traditional for loop in Kotlin.*/
     val nums = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+    val fruits = listOf("Apple", "Orange", "Pear", "Grapes", "Pineapple")
+    fruits.filter { it.startsWith("P") }.sortedBy { it }.map { it.uppercase() }.forEach { println(it) }
+
 
 
 }
