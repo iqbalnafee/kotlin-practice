@@ -1,5 +1,5 @@
 fun main(){
-   val s1: Shape = Shape(21.00, 22.00)
+   val s1: Shape = Shape(21.00, 22.00) // init block is executed whenever we call the primary constructor
    println("width is ${s1.width} and height is ${s1.height}")
 }
 
