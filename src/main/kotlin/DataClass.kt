@@ -7,6 +7,9 @@ fun main(){
     
     println(c1)
     
+    val c2 = c1.copy(radius = 3.0)
+    println(c2)
+    
     // in data classes toString, hasCode, equals and others methods are already overidden
     // data class is useful for creating model classes
 }
